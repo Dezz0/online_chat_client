@@ -1,0 +1,84 @@
+.center {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
+    padding-left: calc(50% - 200px);
+    padding-right: calc(50% - 200px);
+    background-color: #17181d;
+}
+
+.sendingForm {
+    position: relative;
+    top: calc(50% - 134.5px);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    padding: 10px;
+}
+
+.title {
+    color: #fafafa;
+    align-self: flex-start;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.fieldContainer {
+    width: 100%;
+    position: relative;
+}
+.fieldContainer::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 24px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 1px solid #cacaca;
+    padding-right: 40px;
+}
+.fieldContainer:first-of-type::before {
+    background-image: url(../images/chat_logo.svg);
+}
+.fieldContainer:last-of-type::before {
+    background-image: url(../images/user_logo.svg);
+}
+
+.formField {
+    width: 100%;
+    padding: 15px 8px 15px 50px;
+    outline: 2px solid #cacaca;
+    background-color: #383940;
+    color: #fafafa;
+    font-size: 17px;
+}
+
+.formField:focus {
+    outline: 3px solid #e5e5e5;
+}
+
+.containerButton {
+    width: 70%;
+}
+
+.connectButton {
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #fca311;
+    color: #fafafa;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.connectButton:hover {
+    background-color: #e09145;
+}
+.connectButton:active {
+    background-color: #e09145;
+}

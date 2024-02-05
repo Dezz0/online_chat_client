@@ -1,0 +1,10 @@
+.room {
+    height: 100vh;
+    padding-left: calc(50% - 410px);
+    padding-right: calc(50% - 410px);
+    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: #17181d;
+    position: relative;
+    overflow: auto;
+}
